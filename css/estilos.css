@@ -1,0 +1,163 @@
+:root {
+  --color-pricipal: rgb(192, 243, 192);
+  --color-fondo: white;
+  --color-texto: #222;:root {
+  --color-pricipal: rgb(192, 243, 192);
+  --color-fondo: white;
+  --color-texto: #222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden; /* 👈 Evita que aparezca scroll horizontal */
+}
+
+/* HEADER */
+header {
+  display: flex;
+  width: 100%;
+  height: 2em;
+  color: var(--color-fondo);
+  background-color: var(--color-pricipal);
+  padding: 1em;
+  box-shadow: 0 2px 4px var(--color-texto);
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  justify-content:space-between;
+}
+
+/* Ícono de menú */
+.menu-icon {
+  display: block;
+  font-size: 1.5em;
+  color: var(--color-fondo);
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+/* MENÚ */
+.menu {
+  position: absolute; /* 👈 Asegura que se posicione relativo al header */
+  top: 100%;
+  left: 0;
+  width: 13em;
+  max-height: 90vh; /* 👈 Evita que crezca más que la pantalla */
+  overflow-y: auto; /* 👈 Agrega scroll interno si se llena */
+  background-color: var(--color-pricipal);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  z-index: 9;
+}
+
+.menu-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+}
+
+/* Mostrar el menú cuando el checkbox esté activado */
+#menu-toggle:checked + label + .menu .menu-lista {
+  display: flex;
+}
+
+/* Ítems del menú */
+.menu-lista li a {
+  display: block;
+  padding: 1em;
+  color: var(--color-fondo);
+  text-decoration: none;
+}
+
+/* Hover */
+.menu-lista li a:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-pricipal);
+}
+
+#lado-izquierdo {
+  margin: 0 2em;
+  width: 13em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-fondo);
+}
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  width: 100%;
+  height: 2em;
+  color: var(--color-fondo);
+  background-color: var(--color-pricipal);
+  padding: 1em;
+  box-shadow: 0 2px 4px var(--color-texto);
+  align-items: center;
+}
+
+/* Ícono de menú */
+.menu-icon {
+  display: block;
+  font-size: 1.5em;
+  color: var(--color-texto);
+  cursor: pointer;
+  padding: 0.5em;
+  color: var(--color-fondo);
+}
+
+/* MENÚ */
+.menu {
+  width: 100%;
+}
+
+.menu-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-pricipal);
+  display: none;
+  flex-direction: column;
+}
+
+/* Mostrar el menú cuando el checkbox esté activado */
+#menu-toggle:checked + label + .menu .menu-lista {
+  display: flex;
+}
+
+/* Ítems del menú */
+.menu-lista li a {
+  display: block;
+  padding: 0.5em;
+  color: var(--color-fondo);
+  text-decoration: none;
+  margin: 0.5em;
+}
+
+/* Hover */
+.menu-lista li a:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-pricipal);
+}
+#lado-izquierdo{
+  margin: 0 2em;
+  width: 13em;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-fondo);
+}
