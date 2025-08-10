@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturacion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/gestion.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="gestion.html">GESTION DE INGREDIENTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/7.Facturacion/facturacion.html">FACTURACIÓN</a></li>
+                <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+            </ul>    
+        </nav>
+        <section id="lado-izquierdo">
+            <a href="/0.Clientes/inicio_de_sesion.html" class="inicio_de_sesion">INICIAR SESIÓN</a>
+            <a href="" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+        </section>
+    </header>
+      <h1>Gestión de ingredientes.</h1>
+
+    <div class="fila-superior">
+      <a href="crear.html" class="boton amarillo">
+      Crear y <br>gestionar<br> ingredientes
+      </a>
+      <a href="eliminar.html" class="boton lila">
+        Eliminar <br>Ingredientes
+      </a>
+    </div>
+
+    <div class="contenedor-inferior">
+      <a href="stock.html" class="boton verde">
+        Control de stock de <br> ingredientes.
+      </a>
+    </div>
+</body>
+</html>
