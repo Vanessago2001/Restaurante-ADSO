@@ -161,3 +161,21 @@ a{
   text-decoration: none;
   color: var(--color-fondo);
 }
+h2{
+  display: flex;
+  justify-self: center;
+  color: var(--color-pricipal);
+}
+.datios{
+  border-right: solid 2px var(--color-pricipal);
+  display: block;
+  width: 40%;
+  height: 90%;
+}
+
+.operarios{
+  display: flex ;
+}
+.datos_clientes{
+  display: block;
+}
