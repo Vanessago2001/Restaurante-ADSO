@@ -1,6 +1,6 @@
-/* CSS BONITO PERO SIMPLE PARA PRINCIPIANTES */
 
-/* Resetear estilos por defecto */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-/* Contenedor principal */
+
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
@@ -25,7 +25,7 @@ body {
     overflow: hidden;
 }
 
-/* Header bonito */
+
 .header {
     background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
     padding: 25px;
@@ -40,7 +40,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Layout principal */
 .fila {
     display: flex;
     gap: 25px;
@@ -54,7 +53,6 @@ body {
     gap: 20px;
 }
 
-/* Cajas principales con efectos bonitos */
 .caja {
     background: #f8f9fa;
     border-radius: 12px;
@@ -69,7 +67,7 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* Títulos coloridos para cada sección */
+
 .roja h2 { 
     background: linear-gradient(135deg, #ff6b6b, #ee5a52);
     color: white;
@@ -110,7 +108,7 @@ body {
     box-shadow: 0 3px 10px rgba(72, 219, 251, 0.3);
 }
 
-/* Campos de formulario mejorados */
+
 .campo {
     margin-bottom: 15px;
 }
@@ -146,7 +144,6 @@ textarea {
     font-family: inherit;
 }
 
-/* Información de contacto bonita */
 .info-contacto {
     background: white;
     border-radius: 8px;
@@ -172,7 +169,7 @@ textarea {
     width: 25px;
 }
 
-/* Sección de calificación */
+
 .calificacion {
     text-align: center;
     margin-top: 15px;
@@ -204,7 +201,6 @@ textarea {
     color: #7f8c8d;
 }
 
-/* Lista de clientes mejorada */
 .lista-clientes {
     background: white;
     border: 2px solid #e9ecef;
@@ -245,7 +241,6 @@ textarea {
     border-radius: 12px;
 }
 
-/* Botones bonitos */
 .boton {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
@@ -274,7 +269,6 @@ textarea {
     background: linear-gradient(135deg, #48dbfb, #0abde3);
 }
 
-/* Inputs especiales */
 .puntos-input {
     text-align: center;
     font-weight: bold;
@@ -288,7 +282,7 @@ textarea {
     color: #e74c3c;
 }
 
-/* Scrollbar personalizada */
+
 .lista-clientes::-webkit-scrollbar {
     width: 6px;
 }
@@ -302,7 +296,7 @@ textarea {
     border-radius: 3px;
 }
 
-/* Responsive para móviles */
+
 @media (max-width: 768px) {
     .fila {
         flex-direction: column;
@@ -326,4 +320,5 @@ textarea {
         align-items: flex-start;
         gap: 5px;
     }
+
 }
