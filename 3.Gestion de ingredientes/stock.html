@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/stock.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="gestion.html">GESTION DE INGREDIENTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">TOMA DE PEDIDOS</a></li>
+                <li><a href="/7.Facturacion/facturacion.html">FACTURACIÓN</a></li>
+                <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+            </ul>    
+        </nav>
+        <section id="lado-izquierdo" class="iconos-acciones">
+            <a href="#" class="notificaciones"><i class="fa-solid fa-bell"></i></a>
+            <a href="#" class="perfil"><i class="fa-solid fa-user"></i></a>
+            <a href="#" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </section>
+    </header>
+
+    <h1>Lista de ingredientes</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ingrediente</th>
+          <th>Cantidad</th>
+          <th>Unidad</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tomate</td>
+          <td>1</td>
+          <td>kg</td>
+          <td class="bajo-stock">Bajo stock</td>
+        </tr>
+        <tr>
+          <td>Azúcar</td>
+          <td>10</td>
+          <td>kg</td>
+          <td class="disponible">Disponible</td>
+        </tr>
+        <tr>
+          <td>Huevos</td>
+          <td>2</td>
+          <td>unidades</td>
+          <td class="bajo-stock">Bajo stock</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
