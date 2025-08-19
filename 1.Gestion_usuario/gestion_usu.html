@@ -1,37 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facturacion</title>
-    <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Roles - Restaurante</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <nav class="menu">
-            <ul class="menu-lista">
-                <li><a href="/0.Principal/pagina_inical.html">INICIO</a></li>
-                <li><a href="/10.reservas/reservas.html">RESERVAS</a></li>
-                <li><a href="/5.Toma de pedidos/pedidos.html">PEDIDOS</a></li>
-                <li><a href="/7.Facturacion/facturacion.html">FACTURACIÓN</a></li>
-                <li><a href="/9.gestion clientes/index.html">GESTION CLIENTE</a></li>
-                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
-                <li><a href="/4.Gestion de mesa/gestion_mesa.html">GESTION DE MESA</a></li>
-                <li><a href="/2.Gestion de platos/gestion_platos.html">GESTION DE PLATOS</a></li>
-                <li><a href="/6.Gestion_de_cocina/gestion_de_cocina.html">GESTION DE COCINA</a></li>
-                <li><a href="/3.Gestion de ingredientes/gestion.html">GESTION DE INGREDIENTES</a></li>
-                <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
-            </ul>    
-        </nav>
-        <section id="lado-izquierdo">
-            <a href="/0.Clientes/inicio_de_sesion.html" class="inicio_de_sesion">INICIAR SESIÓN</a>
-            <a href="" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
-        </section>
+
+  <!-- Barra lateral -->
+  <aside class="barra">
+    <div class="menu">☰</div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarSeccion('registrar')">Registrar</a></li>
+        <li><a href="#" onclick="mostrarSeccion('editar')">Editar</a></li>
+        <li><a href="#" onclick="mostrarSeccion('eliminar')">Eliminar</a></li>
+      </ul>
+      <hr>
+      <ul>
+        <li><a href="#">Chefs</a></li>
+        <li><a href="#">Auxiliares</a></li>
+        <li><a href="#">Meseros</a></li>
+        <li><a href="#">Administradores</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido">
+
+    <!-- Barra superior -->
+    <header class="iconos">
+      <div class="icono">👤</div>
+      <div class="icono">🚪</div>
     </header>
-</body>
-</html>
+
+    <!-- Sección de tabla -->
+    <section id="roles" class="seccion">
+      <h2>Listado de Roles</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chef</td>
+            <td>Chef</td>
+            <td>
+              <button class="btn-editar">✏</button>
+              <button class="btn-eliminar">🗑</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Auxiliar</td>
+            <td>Auxiliar</td>
+            <td>
+              <button class="btn-editar">✏</button>
+              <button class="btn-eliminar">🗑</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Mesero</td>
+            <td>Mesero</td>
+            <td>
+              <button class="btn-editar">✏</button>
+              <button class="btn-eliminar">🗑</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección Registrar -->
+    <section id="registrar" class="formulario oculto">
+      <h2>Registrar Trabajador</h2>
+      <form>
+        <label>Nombre</label>
+        <input type="text" placeholder="Ingrese nombre" required>
+
+        <label>Rol</label>
+        <select required>
+          <option value="">Seleccione un rol</option>
+          <option value="chef">Chef</option>
+          <option value="auxiliar">Auxiliar</option>
+          <option value="mesero">Mesero</option>
+          <option value="administrador">Administrador</option>
+        </select>
+
+        <label>Fecha</label>
+        <input type="date" required>
+
+        <label>RH</label>
+        <input type="text" placeholder="Ej: O+" required>
+
+        <label>EPS</label>
+        <input type="text" placeholder="Ingrese EPS" required>
+
+        <label>Teléfono</label>
+        <input type="tel" placeholder="Ingrese teléfono" required>
+
+        <label>No. Identificación</label>
+        <input type="text" placeholder="Ingrese número de identificación" required>
+
+        <button type="submit" class="btn-registrar">Registrar</button>
+      </form>
+    </section>
+
+    <!-- Sección Editar -->
+    <section id="editar" class="formulario oculto">
+      <h2>Editar Trabajador</h2>
+      <form>
+        <label>Nombre</label>
+        <input type="text" placeholder="Nombre">
+
+        <label>Rol</label>
+        <select>
+          <option>Chef</option>
+          <option>Auxiliar</option>
+          <option>Mesero</option>
+          <option>Administrador</option>
+        </select>
+
+        <label>Fecha</label>
+        <input type="date">
+
+        <label>RH</label>
+        <select>
+          <option>O+</option>
+          <option>O-</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+
+        <label>EPS</label>
+        <select>
+          <option>Sura</option>
+          <option>Sanitas</option>
+          <option>Compensar</option>
+          <option>Otro</option>
+        </select>
+
+        <label>Teléfono</label>
+        <input type="tel">
+
+        <label>No. Identificación</label>
+        <input type="text">
+
+        <button type="submit" class="btn-guardar">Guardar</button>
+      </form>
+    </section>
+
+    <!-- Sección Eliminar -->
+    <section id="eliminar" class="formulario oculto">
+      <h2>Eliminar Trabajador</h2>
+      <div class="confirmacion">
+        <p>¿Estás segur@ de eliminar?</p>
+        <div class="icono-eliminar">👨‍🍳</div>
+        <p><b>Chef</b></p>
+        <div class="acciones">
+          <button class="btn-ca
