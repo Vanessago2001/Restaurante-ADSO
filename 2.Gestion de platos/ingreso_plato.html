@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos</title>
+    <link rel="stylesheet" href="css/ingreso_plato.css">
+</head>
+<body>
+    <div id="encab1">
+        <div id="menu">
+            <img src="img/logo_base.jpg" alt="">
+        </div>
+        <div id="encab">
+            <div class="logos">
+                <img src="img/logo_base.jpg" alt="">
+            </div>
+            <div class="logos">
+                <img src="img/logo_base.jpg" alt="">
+            </div>
+            <div class="logos">
+                <img src="img/logo_base.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <section id="ingreso">
+        <div id="parte1">
+            <div class="nombre">
+                <h3>Nombre del plato</h3>
+                <input type="text">
+            </div>
+            <div class="descrip">
+                <h3>Descripción</h3>
+                <input type="text">
+            </div>
+            <div class="tama">
+                <h3>Tamaños y precios</h3>
+                <div class="chec_tama">
+                    <input type="checkbox" name="Personal" id="personal">
+                    <h4>Personal</h4>
+                    <input type="text" class="tama_caj">
+                </div>
+                <div class="chec_tama">
+                    <input type="checkbox" name="Mediano" id="med">
+                    <h4>Mediano</h4>
+                    <input type="text" class="tama_caj">
+                </div>
+                <div class="chec_tama">
+                    <input type="checkbox" name="Grande" id="grande">
+                    <h4>Grande</h4>
+                    <input type="text" class="tama_caj">
+                </div>
+            </div>
+        </div>
+        <div id="parte2">
+            <div class="tipo_p">
+                <h3>Tipo de Plato</h3>
+                <div class="orden_p">
+                    <input type="checkbox"><h4>Entrada</h4>
+                </div>
+                <div class="orden_p">
+                    <input type="checkbox"><h4>Plato Fuerte</h4>
+                </div>
+                <div class="orden_p">
+                    <input type="checkbox"><h4>Bebida</h4>
+                </div>
+                <div class="orden_p">
+                    <input type="checkbox"><h4>Postre</h4>
+                </div>
+            </div>
+            <div class="combo">
+                <h3>Combo #1</h3>
+                <input type="text">
+                <h4>Precio</h4>
+                <input type="text">
+            </div>
+        </div>
+        <div class="alergias">
+            <h3>Advertencias Alergicas</h4>
+            <input type="text">
+        </div>
+    </section>
+    <section class="botones">
+        <button>Agregar</button>
+        <button>Eliminar</button>
+    </section>
+</body>
+</html>
