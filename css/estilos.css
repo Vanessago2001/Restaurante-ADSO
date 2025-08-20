@@ -11,10 +11,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  overflow-x: hidden; /* 👈 Evita que aparezca scroll horizontal */
+  overflow-x: hidden; 
 }
 
-/* HEADER */
 header {
   display: flex;
   width: 100%;
@@ -24,12 +23,13 @@ header {
   padding: 1em;
   box-shadow: 0 2px 4px var(--color-texto);
   align-items: center;
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   justify-content:space-between;
 }
 
-/* Ícono de menú */
 .menu-icon {
   display: block;
   font-size: 1.5em;
@@ -38,14 +38,14 @@ header {
   padding: 0.5em;
 }
 
-/* MENÚ */
+
 .menu {
-  position: absolute; /* 👈 Asegura que se posicione relativo al header */
+  position: absolute; 
   top: 100%;
   left: 0;
   width: 13em;
-  max-height: 90vh; /* 👈 Evita que crezca más que la pantalla */
-  overflow-y: auto; /* 👈 Agrega scroll interno si se llena */
+  max-height: 90vh;
+  overflow-y: auto; 
   background-color: var(--color-pricipal);
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   z-index: 9;
@@ -59,12 +59,12 @@ header {
   flex-direction: column;
 }
 
-/* Mostrar el menú cuando el checkbox esté activado */
+
 #menu-toggle:checked + label + .menu .menu-lista {
   display: flex;
 }
 
-/* Ítems del menú */
+
 .menu-lista li a {
   display: block;
   padding: 1em;
@@ -72,7 +72,7 @@ header {
   text-decoration: none;
 }
 
-/* Hover */
+
 .menu-lista li a:hover {
   background-color: var(--color-fondo);
   color: var(--color-pricipal);
@@ -97,7 +97,6 @@ body {
   font-family: sans-serif;
 }
 
-/* HEADER */
 header {
   display: flex;
   width: 100%;
@@ -109,7 +108,6 @@ header {
   align-items: center;
 }
 
-/* Ícono de menú */
 .menu-icon {
   display: block;
   font-size: 1.5em;
@@ -119,7 +117,6 @@ header {
   color: var(--color-fondo);
 }
 
-/* MENÚ */
 .menu {
   width: 100%;
 }
@@ -133,21 +130,18 @@ header {
   flex-direction: column;
 }
 
-/* Mostrar el menú cuando el checkbox esté activado */
 #menu-toggle:checked + label + .menu .menu-lista {
   display: flex;
 }
 
-/* Ítems del menú */
 .menu-lista li a {
   display: block;
-  padding: 0.5em;
+  padding: 1em;
   color: var(--color-fondo);
   text-decoration: none;
-  margin: 0.5em;
+  margin: 1em;
 }
 
-/* Hover */
 .menu-lista li a:hover {
   background-color: var(--color-fondo);
   color: var(--color-pricipal);
@@ -161,21 +155,53 @@ a{
   text-decoration: none;
   color: var(--color-fondo);
 }
-h2{
-  display: flex;
-  justify-self: center;
-  color: var(--color-pricipal);
-}
-.datios{
-  border-right: solid 2px var(--color-pricipal);
-  display: block;
-  width: 40%;
-  height: 90%;
+
+.notificaciones {
+  cursor: pointer;
+  font-size: 24px; 
+  margin-right: 10px;
+  position: relative;
 }
 
-.operarios{
-  display: flex ;
+.perfil{
+  cursor: pointer;
+  font-size: 24px; 
+  margin-right: 10px;
+  position: relative;
 }
-.datos_clientes{
+
+.salida{
+  cursor: pointer;
+  font-size: 24px; 
+  margin-right: 10px;
+  position: relative;
+}
+
+.caja-notificacion {
+  position: absolute;
+  top: 40px; 
+  right: 0;  
+  background-color: #DEB36D; 
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #000;
+  padding: 10px 15px;
+  width: 200px;
+  display: none; 
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+
+#noti-toggle:checked ~ .caja-notificacion {
   display: block;
 }
+
+.caja-notificacion p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+
