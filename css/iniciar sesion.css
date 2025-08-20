@@ -1,6 +1,6 @@
 
 .formulario {
-  margin-top: 150px;
+  margin-top: 4em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@
 
 .formulario input {
   width: 280px;
-  height: 30px;
+  height: 20px;
   border: 1px solid black;
   padding: 5px;
   font-size: 16px;
