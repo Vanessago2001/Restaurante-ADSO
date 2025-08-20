@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/eliminar.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="gestion.html">GESTION DE INGREDIENTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">TOMA DE PEDIDOS</a></li>
+                <li><a href="/7.Facturacion/facturacion.html">FACTURACIÓN</a></li>
+                <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+            </ul>    
+        </nav>
+        <section id="lado-izquierdo" class="iconos-acciones">
+            <a href="#" class="notificaciones"><i class="fa-solid fa-bell"></i></a>
+            <a href="#" class="perfil"><i class="fa-solid fa-user"></i></a>
+            <a href="C:\Users\laura\OneDrive\Escritorio\maketa\iniciar sesion.html" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </section>
+    </header>
+  
+   <div class="formulario">
+      <label for="nombre">Nombre del ingrediente.</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="unidad">Unidad de medida.</label>
+      <select id="unidad" name="unidad">
+        <option value="" disabled selected>Selecciona</option>
+        <option value="gramos">Gramos</option>
+        <option value="litros">Litros</option>
+        <option value="unidades">Unidades</option>
+      </select>
+
+      <button class="eliminar" type="submit">Eliminar</button>
+   </div>
+</body>
+</html>
