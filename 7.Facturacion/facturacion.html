@@ -6,7 +6,7 @@
     <title>Facturacion</title>
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/7y8.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -32,36 +32,60 @@
         </nav>
         <section id="lado-izquierdo">
             <a href="/0.Clientes/perfil_usuario.html" class="perfil_usuario"><i class="fa-solid fa-user"></i></a>
-            <a href="/0.Principal/pagina_principal.html" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+            <a href="/0.Principal/pagina_principal.html" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
         </section>
     </header>
-    <h2>FACTURACIÓN-ELECTRONICA</h2>
-    <div class="datios">
-        <section class="datos_clientes">
-            <p>CAJA:</p>
-            <input type="number">
-            <p>CLIENTE:</p>
-            <input type="text">
-        </section>
-        <section class="operarios">
-            <P>MESA:</P>
-            <input type="number">
-            <P>MESERO:</P>
-            <input type="number">
-        </section>
-    </div>
-    <div class="datios">
-        <section class="menu_esco">
-            <p>Codigo</p>
-            <input type="number" class="sin">
-            <p>Producto</p>
-            <input type="text" class="sin">
-            
-        </section>
-    </div>
-    <div id="facturacion">
 
-    </div>
+    <main class="factura">
+        <!-- Columna izquierda -->
+        <section class="col-izq">
+            <h2>FACTURACIÓN - ELECTRÓNICA</h2>
 
+            <div class="campo">
+                <label>CAJA:</label>
+                <input type="number">
+            </div>
+
+            <div class="campo">
+                <label>CLIENTE:</label>
+                <input type="text">
+            </div>
+
+            <div class="campo">
+                <label>MESA:</label>
+                <input type="number">
+            </div>
+
+            <div class="campo">
+                <label>MESERO:</label>
+                <input type="number">
+            </div>
+
+            <div class="producto">
+                <label>Cód. Producto:</label>
+                <input type="number">
+                <input type="text" placeholder="Nombre del producto">
+                <textarea placeholder="Descripción..."></textarea>
+            </div>
+        </section>
+
+        <!-- Columna derecha -->
+        <section class="col-der">
+            <div class="tabla">
+                <p><b>Código</b> | <b>Producto</b> | <b>Cant</b> | <b>Valor</b></p>
+                <p>001 - Gaseosa - 2 - $8.000</p>
+                <p>002 - Pizza - 1 - $25.000</p>
+            </div>
+
+            <div class="totales">
+                <p>Subtotal: $33.000</p>
+                <p>IVA: $6.000</p>
+                <p>Descuento: $0</p>
+                <p><b>Total: $39.000</b></p>
+            </div>
+
+            <button class="enviar">Enviar DIAN</button>
+        </section>
+    </main>
 </body>
 </html>

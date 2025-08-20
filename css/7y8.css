@@ -4,21 +4,108 @@
   --color-texto: #222;
 }
 
-.datios{
-    display: flex;
-    width: 44%;
-    justify-content:space-around;
+/* ===== CONTENEDOR FACTURA ===== */
+.factura {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas */
+  gap: 1.5em;
+  padding: 2em;
+  margin-top: 5em; /* espacio por el header fijo */
 }
-.menu_esco{
-    margin: 1em 0;
-    display: flex;
+
+
+.col-izq {
+  border-right: 4px solid var(--color-pricipal); /* raya separadora */
 }
-.sin{
-    border: none;
-    box-shadow: #807f7f 1px 1px;
-    height: 2em;
-    align-self: center;
+
+.col-izq, .col-der {
+  padding: 1em;
 }
-#facturacion{
-    border-left: 2px solid red;
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* ===== CAMPOS ===== */
+.campo {
+  margin-bottom: 1em;
+}
+
+.campo label {
+  display: inline-block;
+  width: 6em;
+  font-weight: bold;
+}
+
+.producto input, .producto textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* ===== TABLA DERECHA ===== */
+.tabla {
+  background: #eef;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.totales {
+  background: #ffe;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* ===== BOTÓN ENVIAR ===== */
+.enviar {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.enviar:hover {
+  background: darkgreen;
+}
+
+/* ===== AJUSTES DE TU CSS ORIGINAL ===== */
+.datios {
+  display: flex;
+  width: 100%;          /* ahora ocupa todo dentro de la columna */
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.menu_esco {
+  margin: 1em 0;
+  display: flex;
+  gap: 0.5em;
+}
+
+.sin {
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* sombra más pareja */
+  height: 2em;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+  align-self: center;
+}
+
+#facturacion {
+  border-left: 2px solid red; /* lo dejamos por si quieres ese detalle */
+  padding-left: 1em;
 }
