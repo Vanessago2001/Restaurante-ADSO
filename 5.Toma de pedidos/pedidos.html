@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Nuevo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/pedidos.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="gestion.html">GESTION DE INGREDIENTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">TOMA DE PEDIDOS</a></li>
+                <li><a href="/7.Facturacion/facturacion.html">FACTURACIÓN</a></li>
+                <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+            </ul>    
+        </nav>
+        <section id="lado-izquierdo" class="iconos-acciones">
+            <a href="#" class="notificaciones"><i class="fa-solid fa-bell"></i></a>
+            <a href="#" class="perfil"><i class="fa-solid fa-user"></i></a>
+            <a href="c:\Users\laura\OneDrive\Escritorio\0.5 iniciar sesion\iniciar sesion.html" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </section>
+    </header>
+
+    <section>
+        <main class="card">
+            <h1 class="title">Nuevo pedido</h1>
+
+            <form id="pedidoForm" class="form" action="cocina.html" method="get" autocomplete="off" novalidate>
+                
+                <label class="field">
+                    <span class="label-text">Mesa</span>
+                    <input type="text" name="mesa" placeholder="Número o nombre de mesa" required>
+                </label>
+
+                <label class="field">
+                    <span class="label-text">Mesero</span>
+                    <input type="text" name="mesero" placeholder="Nombre del mesero" required>
+                </label>
+
+                <label class="field">
+                    <span class="label-text">Plato</span>
+                    <input type="text" name="plato" placeholder="Nombre del plato" required>
+                </label>
+
+                <label class="field">
+                    <span class="label-text">Tipo de plato</span>
+                    <select name="tipo" required>
+                        <option value="" disabled selected>Selecciona tipo</option>
+                        <option>Entrada</option>
+                        <option>Fuerte</option>
+                        <option>Postre</option>
+                        <option>Bebida</option>
+                    </select>
+                </label>
+
+                <button type="submit" class="btn">Registrar pedido</button>
+                
+            </form>
+        </main>
+    </section>
+</body>
+</html>
