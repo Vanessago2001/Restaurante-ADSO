@@ -1,0 +1,16 @@
+:root {
+  --color-pricipal: rgb(192, 243, 192);
+  --color-fondo: white;
+  --color-texto: #222;
+}
+
+.datios{
+    border: 2px solid rebeccapurple;
+    padding: 1em;
+    display: flex;
+    width: 44%;
+    border-right: var(--color-pricipal) 2px solid;
+}
+.datos_clientes{
+    display: fl;
+}
