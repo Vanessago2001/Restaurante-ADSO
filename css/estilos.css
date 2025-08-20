@@ -1,9 +1,6 @@
 :root {
   --color-pricipal: rgb(192, 243, 192);
   --color-fondo: white;
-  --color-texto: #222;:root {
-  --color-pricipal: rgb(192, 243, 192);
-  --color-fondo: white;
   --color-texto: #222;
 }
 
@@ -88,7 +85,7 @@ a {
   color: var(--color-fondo);
 }
 
-}
+
 
 
 body {

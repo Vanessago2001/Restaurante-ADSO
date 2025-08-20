@@ -5,12 +5,20 @@
 }
 
 .datios{
-    border: 2px solid rebeccapurple;
-    padding: 1em;
     display: flex;
     width: 44%;
-    border-right: var(--color-pricipal) 2px solid;
+    justify-content:space-around;
 }
-.datos_clientes{
-    display: fl;
+.menu_esco{
+    margin: 1em 0;
+    display: flex;
+}
+.sin{
+    border: none;
+    box-shadow: #807f7f 1px 1px;
+    height: 2em;
+    align-self: center;
+}
+#facturacion{
+    border-left: 2px solid red;
 }
