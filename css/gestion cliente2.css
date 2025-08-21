@@ -15,7 +15,7 @@ body {
 }
 .header-box {
     width: 100%;
-    background: linear-gradient(90deg, #36a2e0 0%, #5cc6f6 100%);
+    background-color: rgb(192, 243, 192);
     color: #fff;
     text-align: center;
     font-size: 2.2em;
@@ -78,7 +78,7 @@ body {
     background: #4caf50;
     height: 100%;
     border-radius: 10px;
-    width: 80%; /* 120/150 = 80% */
+    width: 80%;
     position: absolute;
     left: 0;
     top: 0;
@@ -123,7 +123,7 @@ body {
     width: 100%;
     margin-top: 10px;
     padding: 8px 0;
-    background: #1976d2;
+    background-color: rgb(192, 243, 192);
     color: #fff;
     border: none;
     border-radius: 6px;
