@@ -92,6 +92,7 @@ table td {
     padding: 8px 10px;
     border-bottom: 1px solid #ddd;
     color: var(--color-texto);
+    height: 1em;
 }
 
 table tr:nth-child(even) {
