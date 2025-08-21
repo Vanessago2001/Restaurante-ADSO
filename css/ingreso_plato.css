@@ -29,7 +29,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 100px;
-    margin-top: 2em;
+    margin-top: 5em;
     justify-content: space-around;
 }
 
@@ -118,4 +118,5 @@
 
 .botones button{
     width: 100px;
+
 }
