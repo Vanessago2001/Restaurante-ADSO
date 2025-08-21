@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Clientes</title>
-    <link rel="stylesheet" href="css/estlo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+
+    <details>
+        <summary>&#9776;</summary>
+        <ul>
+            <li>Platos</li>
+            <li>Eventos</li>
+            <li>Su informacion</li>
+            <li>reservas</li>
+            <li>volver al menu</li>
+        </ul>
+    </details>
+    
     <div class="contenedor">
         <div class="header">
-            <h1>🏢 GESTIÓN DE CLIENTES</h1>
+            <h1>PERFIL DEL CLIENTE</h1>
         </div>
         
         <div class="fila">
@@ -17,24 +29,24 @@
             <div class="columna">
                
                 <div class="caja roja">
-                    <h2>👤 PERFIL DEL CLIENTE</h2>
+                    
                     <div class="campo">
-                        <label>👨‍💼 Nombre:</label>
+                        <label> Nombre:</label>
                         <input type="text" placeholder="Juan Pérez">
                     </div>
                     
                     <div class="campo">
-                        <label>🆔 Cédula:</label>
+                        <label> Cédula:</label>
                         <input type="text" placeholder="12345678">
                     </div>
                     
                     <div class="info-contacto">
                         <div class="contacto-item">
-                            <span class="icono">📧</span>
+                            <span class="icono"></span>
                             <span>cliente@gmail.com</span>
                         </div>
                         <div class="contacto-item">
-                            <span class="icono">📱</span>
+                            <span class="icono"></span>
                             <span>300-123-4567</span>
                         </div>
                         <div class="contacto-item">
@@ -62,7 +74,7 @@
                             <span class="estrella">⭐</span>
                         </div>
                         <p class="texto-calificacion">Calificación del Cliente</p>
-                        <p class="planes">📋 PLANES DISPONIBLES</p>
+                        <p class="planes">PLANES DISPONIBLES</p>
                     </div>
                 </div>
             </div>
@@ -71,15 +83,15 @@
             <div class="columna">
                 <!-- Buscar Cliente -->
                 <div class="caja amarilla">
-                    <h2>🔍 BUSCAR CLIENTE</h2>
+                    <h2> BUSCAR CLIENTE</h2>
                     <div class="campo">
-                        <label>🔎 Buscar por nombre o cédula:</label>
+                        <label> Buscar por nombre o cédula:</label>
                         <input type="text" placeholder="Escriba aquí para buscar..." class="buscar-input">
                     </div>
-                    
+                    <!--nombres de los clientes-->
                     <div class="lista-clientes">
                         <div class="cliente-item">
-                            <span class="cliente-nombre">Juan Carlos</span>
+                            <span class="cliente-nombre">Cristiano Ronaldo</span>
                             <span class="cliente-cedula">CC: 12345678</span>
                         </div>
                         <div class="cliente-item">
@@ -97,12 +109,32 @@
                     </div>
                     <button class="boton boton-buscar">🔍 Buscar Cliente</button>
                 </div>
+                <!-- Calificaciones de Platos -->
+<div class="caja calificacion-platos">
+    <h2>Calificaciones de nuestros Platos</h2>
+    <div class="plato-item">
+        <span class="plato-nombre">Lomo Saltado</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="plato-item">
+        <span class="plato-nombre">Sopa de Miso</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐</span>
+    </div>
+    <div class="plato-item">
+        <span class="plato-nombre">Ensalada César</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="plato-item">
+        <span class="plato-nombre">Filet Mignon</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐</span>
+    </div>
+</div>
                 
                 <!-- Descuentos -->
                 <div class="caja azul">
-                    <h2>💸 APLICAR DESCUENTOS</h2>
+                    <h2>APLICAR DESCUENTOS</h2>
                     <div class="campo">
-                        <label>🏷️ Tipo de descuento:</label>
+                        <label> Tipo de descuento:</label>
                         <select class="select-descuento">
                             <option>Seleccionar descuento...</option>
                             <option>🥉 10% - Cliente frecuente</option>
@@ -112,26 +144,28 @@
                     </div>
                     
                     <div class="campo">
-                        <label>💵 Valor del descuento:</label>
+                        <label>Valor del descuento:</label>
                         <input type="text" placeholder="$0.00" class="valor-input">
                     </div>
                     
                     <div class="campo">
-                        <label>💳 Saldo actual:</label>
+                        <label> Saldo actual:</label>
                         <input type="text" placeholder="Saldo del cliente">
                     </div>
                     
                     <div class="campo">
-                        <label>📝 Notas adicionales:</label>
+                        <label> Notas adicionales:</label>
                         <textarea placeholder="Escriba observaciones sobre el cliente..."></textarea>
                     </div>
                     
-                    <button class="boton boton-aplicar">💸 Aplicar Descuento</button>
+                    <button class="boton boton-aplicar">Aplicar Descuento</button>
                 </div>
             </div>
         </div>
     </div>
+  
 
     
+
 </body>
 </html>
