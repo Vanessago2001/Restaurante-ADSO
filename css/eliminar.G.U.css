@@ -1,0 +1,66 @@
+/* Contenedor principal de la sección eliminar */
+.contenedor {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Título principal */
+.contenedor h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* Caja central tipo ventana */
+.ventana-confirmacion {
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Mensaje de advertencia */
+.mensaje-confirmacion {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Ícono y texto de rol */
+.icono-chef {
+    font-size: 40px;
+}
+
+.rol {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Botones de cancelar y eliminar */
+button.cancelar, button.eliminar {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo individual de los botones */
+button.cancelar {
+    background-color: #d0f0f0;
+    color: #006666;
+}
+
+button.eliminar {
+    background-color: #f4cccc;
+    color: #a60000;
+}
