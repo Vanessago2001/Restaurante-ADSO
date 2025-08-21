@@ -1,0 +1,103 @@
+:root {
+  --color-pricipal: rgb(192, 243, 192);
+  --color-fondo: white;
+  --color-texto: #222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contenedor {
+    height: 30em;
+    margin: 3em;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grupo {
+    border: 2px solid var(--color-pricipal);
+    border-radius: 5px;
+    background: var(--color-
+    );
+    padding: 10px;
+}
+
+/* Ocultar checkbox */
+.grupo input[type="checkbox"] {
+    display: none;
+}
+
+.titulo {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/* Menú cerrado */
+.submenu {
+    list-style: none;
+    padding-left: 15px;
+    margin: 0;
+    display: none;
+}
+
+/* Mostrar menú cuando se active el checkbox */
+.grupo input[type="checkbox"]:checked ~ .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+.submenu li a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+.submenu li a:hover {
+    color: rgb(44, 245, 128);
+}
+/* ==== ESTILOS PARA TABLAS ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    background: var(--color-fondo);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th {
+    background: var(--color-pricipal);
+    color: var(--color-texto);
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+
+table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+    color: var(--color-texto);
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: rgba(192, 243, 192, 0.3);
+}

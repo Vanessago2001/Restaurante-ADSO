@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facturacion</title>
+    <title>Reportes</title>
     <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <input type="checkbox" id="menu-toggle" hidden>
@@ -26,13 +30,61 @@
                 <li><a href="/6.Gestion_de_cocina/gestion_de_cocina.html">GESTION DE COCINA</a></li>
                 <li><a href="/3.Gestion de ingredientes/gestion.html">GESTION DE INGREDIENTES</a></li>
                 <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
-            </ul>    
+            </ul>
         </nav>
         <section id="lado-izquierdo">
             <a href="/0.Clientes/perfil_usuario.html" class="perfil_usuario"><i class="fa-solid fa-user"></i></a>
-            <a href="/0.Principal/pagina_principal.html" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+            <a href="/0.Principal/pagina_principal.html" class="salida"><i
+                    class="fa-solid fa-arrow-right-from-bracket"></i></a>
         </section>
     </header>
-    
+
+    <h2>Reportes</h2>
+
+    <main class="contenedor">
+        <section class="grupo">
+            <input type="checkbox" id="facturacion">
+            <label for="facturacion" class="titulo">Facturación <i class="fa-solid fa-chevron-down"></i></label>
+            <ul class="submenu">
+                <li><a href="Fact_emitidas.html">Fact. Emitidas</a></li>
+                <li><a href="Fact_canceladas.html">Fact. Canceladas</a></li>
+                <li><a href="Fact_rechazadas.html">Fact. Rechazadas</a></li>
+                <li><a href="Fact_frecuentes.html">Fact. Frecuentes</a></li>
+            </ul>
+        </section>
+
+        <section class="grupo">
+            <input type="checkbox" id="movimiento">
+            <label for="movimiento" class="titulo">Movimiento <i class="fa-solid fa-chevron-down"></i></label>
+            <ul class="submenu">
+                <li><a href="mov_aux_conta.html">Mov. Auxiliar Contable</a></li>
+                <li><a href="mov_aux_tercero.html">Mov. Auxiliar por Tercero</a></li>
+                <li><a href="mov_aux_plato.html">Mov. Auxiliar por Plato</a></li>
+                <li><a href="balance_tercero.html">Balance por Tercero</a></li>
+                <li><a href="balance.html">Balance</a></li>
+            </ul>
+        </section>
+
+        <section class="grupo">
+            <input type="checkbox" id="ingredientes">
+            <label for="ingredientes" class="titulo">Ingredientes <i class="fa-solid fa-chevron-down"></i></label>
+            <ul class="submenu">
+                <li><a href="ing_consumo.html">Ing. Consumo</a></li>
+                <li><a href="ing_por_vencer.html">Ing. Por vencer</a></li>
+                <li><a href="ing_cantidad.html">Ing. Cantidad</a></li>
+                <li><a href="mov_aux_ingrediente.html">Mov. Auxiliar por Ingrediente</a></li>
+            </ul>
+        </section>
+
+        <section class="grupo">
+            <input type="checkbox" id="vendidos">
+            <label for="vendidos" class="titulo">Más vendidos <i class="fa-solid fa-chevron-down"></i></label>
+            <ul class="submenu">
+                <li><a href="platos_vendidos.html">Los platos más vendidos</a></li>
+                <li><a href="bebidas_vendidas.html">Las bebidas más vendidas</a></li>
+                <li><a href="postres_vendidos.html">Los postres más vendidos</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
