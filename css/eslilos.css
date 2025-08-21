@@ -1,0 +1,303 @@
+/* CSS para Sistema de Reservas - Version Basica */
+
+body {
+    font-family: Times New Roman, Arial, sans-serif;
+    background-color: #f2f6fc;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.encabezado {
+    width: 100%;
+    text-align: center;
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    border: 2px solid #357abd;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.encabezado h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.encabezado p {
+    font-size: 14px;
+}
+
+/* Titulo */
+.titulo {
+    width: 100%;
+    text-align: center;
+    color: #357abd;
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: #eaf1fb;
+    padding: 10px;
+    border: 1px solid #b3c6e7;
+    border-radius: 8px;
+}
+
+/* Tabla */
+.tabla-mesas {
+    margin: 0 auto 20px auto;
+    width: 90%;
+    border: 1px solid #b3c6e7;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.tabla-mesas th {
+    background-color: #357abd;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #b3c6e7;
+}
+
+.tabla-mesas td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #eaf1fb;
+}
+
+.tabla-mesas tr {
+    border: 1px solid #eaf1fb;
+}
+
+/* Estados de mesa */
+.disponible {
+    background-color: #b8e994;
+    color: #357a38;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #a3d17b;
+    border-radius: 8px;
+}
+
+.ocupada {
+    background-color: #f8d7da;
+    color: #a94442;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+}
+
+/* Botones */
+.reservar {
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid #357abd;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.reservar:hover {
+    background-color: #357abd;
+}
+
+.no-disponible {
+    background-color: #d3d3d3;
+    color: #888;
+    padding: 8px;
+    border: 1px solid #b3c6e7;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Formulario */
+.formulario-seccion {
+    width: 90%;
+    background-color: #eaf1fb;
+    padding: 20px;
+    border: 1px solid #b3c6e7;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-seccion h2 {
+    color: #357abd;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.reserva-formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fila-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.campo {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-completo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: #357abd;
+    font-size: 14px;
+    text-align: center;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #b3c6e7;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background-color: #d6eaff;
+}
+
+/* Checkbox */
+.grupo-checkbox {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f7f1e3;
+    border: 1px solid #b3c6e7;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupo-checkbox input[type="checkbox"] {
+    width: auto;
+}
+
+.grupo-checkbox label {
+    margin: 0;
+    font-weight: normal;
+    display: inline;
+    color: #357abd;
+}
+
+/* Botones del formulario */
+.grupo-botones {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton {
+    padding: 10px 20px;
+    border: 1px solid #b3c6e7;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.confirmar {
+    background-color: #b8e994;
+    color: #357a38;
+}
+
+.confirmar:hover {
+    background-color: #a3d17b;
+}
+
+.limpiar {
+    background-color: #f7f1e3;
+    color: #357abd;
+}
+
+.limpiar:hover {
+    background-color: #f3e9c6;
+}
+
+/* Info mesa */
+.info-mesa {
+    width: 100%;
+    background-color: #d6eaff;
+    border: 1px solid #b3c6e7;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info-mesa h3 {
+    color: #357abd;
+    margin-bottom: 5px;
+}
+
+.info-mesa p {
+    color: #357abd;
+    margin: 3px 0;
+}
+
+/* Destacado */
+.resaltado {
+    width: 100%;
+    background-color: #fffbe6;
+    border: 1px solid #ffe58f;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+    color: #a67c00;
+}
+
+.emoji {
+    font-size: 1em;
+}

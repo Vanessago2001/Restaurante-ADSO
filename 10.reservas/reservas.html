@@ -1,37 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facturacion</title>
-    <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Reservas - Restaurante</title>
+    <link rel="stylesheet" href="../css/eslilos.css">
 </head>
 <body>
-    <header>
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <nav class="menu">
-            <ul class="menu-lista">
-                <li><a href="/0.Principal/pagina_inical.html">INICIO</a></li>
-                <li><a href="/10.reservas/reservas.html">RESERVAS</a></li>
-                <li><a href="/5.Toma de pedidos/pedidos.html">PEDIDOS</a></li>
-                <li><a href="/7.Facturacion/facturacion.html">FACTURACIÓN</a></li>
-                <li><a href="/9.gestion clientes/index.html">GESTION CLIENTE</a></li>
-                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
-                <li><a href="/4.Gestion de mesa/gestion_mesa.html">GESTION DE MESA</a></li>
-                <li><a href="/2.Gestion de platos/gestion_platos.html">GESTION DE PLATOS</a></li>
-                <li><a href="/6.Gestion_de_cocina/gestion_de_cocina.html">GESTION DE COCINA</a></li>
-                <li><a href="/3.Gestion de ingredientes/gestion.html">GESTION DE INGREDIENTES</a></li>
-                <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
-            </ul>    
-        </nav>
-        <section id="lado-izquierdo">
-            <a href="/0.Clientes/perfil_usuario.html" class="perfil_usuario"><i class="fa-solid fa-user"></i></a>
-            <a href="/0.Principal/pagina_principal.html" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
-        </section>
-    </header>
+    <div class="contenedor">
+        <!-- Header del restaurante -->
+        <div class="encabezado">
+            <h1><span class="emoji">🍽️</span> SISTEMA DE RESERVAS</h1>
+            <p>Bienvenido a nuestro restaurante - Selecciona tu mesa favorita</p>
+        </div>
+
+        <!-- Título de la sección -->
+        <h2 class="titulo">📋 Mesas Disponibles</h2>
+        
+        <!-- Tabla de mesas -->
+        <table class="tabla-mesas">
+            <thead>
+                <tr>
+                    <th>🍽️ Mesa</th>
+                    <th>👥 Capacidad</th>
+                    <th>📍 Ubicación</th>
+                    <th>✅ Estado</th>
+                    <th>🎯 Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mesa 1</td>
+                    <td>2 personas</td>
+                    <td>Ventana</td>
+                    <td><span class="disponible">Disponible</span></td>
+                    <td><a href="#formulario" class="reservar">Reservar</a></td>
+                </tr>
+                <tr>
+                    <td>Mesa 2</td>
+                    <td>4 personas</td>
+                    <td>Centro</td>
+                    <td><span class="ocupada">Ocupada</span></td>
+                    <td><span class="no-disponible">No disponible</span></td>
+                </tr>
+                <tr>
+                    <td>Mesa 3</td>
+                    <td>6 personas</td>
+                    <td>Terraza</td>
+                    <td><span class="disponible">Disponible</span></td>
+                    <td><a href="#formulario" class="reservar">Reservar</a></td>
+                </tr>
+                <tr>
+                    <td>Mesa 4</td>
+                    <td>4 personas</td>
+                    <td>Ventana</td>
+                    <td><span class="disponible">Disponible</span></td>
+                    <td><a href="#formulario" class="reservar">Reservar</a></td>
+                </tr>
+                <tr>
+                    <td>Mesa 5</td>
+                    <td>2 personas</td>
+                    <td>Rincón</td>
+                    <td><span class="ocupada">Ocupada</span></td>
+                    <td><span class="no-disponible">No disponible</span></td>
+                </tr>
+                <tr>
+                    <td>Mesa 6</td>
+                    <td>8 personas</td>
+                    <td>Salón privado</td>
+                    <td><span class="disponible">Disponible</span></td>
+                    <td><a href="#formulario" class="reservar">Reservar</a></td>
+                </tr>
+                <tr>
+                    <td>Mesa 7</td>
+                    <td>4 personas</td>
+                    <td>Centro</td>
+                    <td><span class="disponible">Disponible</span></td>
+                    <td><a href="#formulario" class="reservar">Reservar</a></td>
+                </tr>
+                <tr>
+                    <td>Mesa 8</td>
+                    <td>2 personas</td>
+                    <td>Bar</td>
+                    <td><span class="disponible">Disponible</span></td>
+                    <td><a href="#formulario" class="reservar">Reservar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Sección del formulario de reserva -->
+        <div class="formulario-seccion" id="formulario">
+            <h2><span class="emoji">📝</span> Formulario de Reserva</h2>
+            
+            <div class="info-mesa">
+                <h3><span class="emoji">ℹ️</span> Información de la Mesa</h3>
+                <p>Selecciona "Reservar" en la tabla superior para hacer tu reserva</p>
+                <p>Las mesas están disponibles de 12:00 PM a 10:00 PM</p>
+            </div>
+
+            <form class="reserva-formulario">
+                <!-- Información personal -->
+                <div class="fila-formulario">
+                    <div class="campo">
+                        <label for="nombre">👤 Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">📞 Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" >
+                    </div>
+                </div>
+
+                <div class="fila-formulario">
+                    <div class="campo">
+                        <label for="email">📧 Correo electrónico:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="campo">
+                        <label for="mesa">🍽️ Número de mesa:</label>
+                        <select id="mesa" name="mesa">
+                            <option >Selecciona una mesa</option>
+                            <option >Mesa 1 (2 personas - Ventana)</option>
+                            <option >Mesa 3 (6 personas - Terraza)</option>
+                            <option >Mesa 4 (4 personas - Ventana)</option>
+                            <option >Mesa 6 (8 personas - Salón privado)</option>
+                            <option >Mesa 7 (4 personas - Centro)</option>
+                            <option >Mesa 8 (2 personas - Bar)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Fecha y hora -->
+                <div class="fila-formulario">
+                    <div class="campo campo-completo">
+                        <label for="fecha-hora">📅🕐 Fecha y hora de la reserva:</label>
+                        <input type="datetime-local" id="fecha-hora" name="fecha-hora">
+                    </div>
+                </div>
+
+                <!-- Número de personas -->
+                <div class="fila-formulario">
+                    <div class="campo">
+                        <label for="personas">👥 Número de personas:</label>
+                        <select id="personas" name="personas">
+                            <option >Selecciona cantidad</option>
+                            <option >1 persona</option>
+                            <option >2 personas</option>
+                            <option >3 personas</option>
+                            <option >4 personas</option>
+                            <option >5 personas</option>
+                            <option >6 personas</option>
+                            <option >7 personas</option>
+                            <option >8 personas</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="ocasion">🎉 Ocasión especial:</label>
+                        <select id="ocasion" name="ocasion">
+                            <option value="">Selecciona (opcional)</option>
+                            <option>🎂 Cumpleaños</option>
+                            <option>💕 Aniversario</option>
+                            <option>💼 Cena de negocios</option>
+                            <option>👨‍👩‍👧‍👦 Reunión familiar</option>
+                            <option>🎊 Otra celebración</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Opción de recordatorio -->
+                <div class="grupo-checkbox">
+                    <input type="checkbox" id="recordatorio" name="recordatorio" value="si">
+                    <label for="recordatorio">📱 Quiero recibir un recordatorio por WhatsApp 1 hora antes</label>
+                </div>
+
+                <!-- Información destacada -->
+                <div class="resaltado">
+                    📋 Política de Reservas:<br>
+                    • Las reservas deben confirmarse al menos 2 horas antes<br>
+                    • En caso de no asistir, favor cancelar con anticipación<br>
+                    • Mesa reservada por máximo 15 minutos después de la hora
+                </div>
+
+                <!-- Botones -->
+                <div class="grupo-botones">
+                    <button type="submit" class="boton confirmar">✅ Confirmar Reserva</button>
+                    <button type="reset" class="boton limpiar">🔄 Limpiar Formulario</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
