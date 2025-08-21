@@ -1,0 +1,52 @@
+.registro-horas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.registro-horas th,
+.registro-horas td {
+  border: 1px solid #000;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.registro-horas th {
+  background-color: #e0f0f0;
+  color: teal;
+  font-weight: bold;
+}
+
+.registro-horas td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+/* Botón de guardar */
+.btn-guardar {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #d4edda;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #155724;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.btn-guardar:hover {
+    background-color: #c3e6cb;
+}
+
+.boton {
+    text-align: center;
+
+}
+
+.btn-boton {
+    display: inline-block;
+
+}
