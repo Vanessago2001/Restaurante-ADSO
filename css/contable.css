@@ -1,0 +1,85 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 26px;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    margin-bottom: 20px;
+    gap: 25px; 
+}
+
+
+.campo {
+    flex: 1;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 16px;
+    height: 40px;
+}
+
+input:focus {
+    border-color: #2980b9;
+    box-shadow: 0px 0px 5px rgba(41, 128, 185, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+thead {
+    background-color: #2980b9;
+    color: white;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    min-height: 35px;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eef6fc;
+}
