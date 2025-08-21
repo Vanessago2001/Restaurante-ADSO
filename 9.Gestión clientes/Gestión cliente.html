@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="gestion cliente.css">
+    <link rel="stylesheet" href="">
+    
+</head>
+
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="/0.Principal/pagina_inical.html">INICIO</a></li>
+                <li><a href="/10.reservas/reservas.html">RESERVAS</a></li>
+                <li><a href="/5.Toma de pedidos/pedidos.html">PEDIDOS</a></li>
+                <li><a href="/7.Facturacion/facturacion.html">FACTURACIÓN</a></li>
+                <li><a href="/9.gestion clientes/index.html">GESTION CLIENTE</a></li>
+                <li><a href="/1.Gestion_usuario/gestion_usu.html">GESTION DE USUARIO</a></li>
+                <li><a href="/4.Gestion de mesa/gestion_mesa.html">GESTION DE MESA</a></li>
+                <li><a href="/2.Gestion de platos/gestion_platos.html">GESTION DE PLATOS</a></li>
+                <li><a href="/6.Gestion_de_cocina/gestion_de_cocina.html">GESTION DE COCINA</a></li>
+                <li><a href="/3.Gestion de ingredientes/gestion.html">GESTION DE INGREDIENTES</a></li>
+                <li><a href="/8.Reporte/reportes.html">REPORTES</a></li>
+            </ul>    
+        </nav>
+        <section id="lado-izquierdo">
+            <a href="/0.Clientes/inicio_de_sesion.html" class="inicio_de_sesion">INICIAR SESIÓN</a>
+            <a href="" class="salida"><i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
+        </section>
+    </header>
+
+
+   
+    
+    <div class="contenedor">
+        <div class="encabezado">
+            <h1>PERFIL DEL CLIENTE</h1>
+        </div>
+        
+        <div class="fila">
+        
+            <div class="columna">
+               
+                <div class="caja roja">
+                    
+                    <div class="campo">
+                        <label> Nombre:</label>
+                        <input type="text" placeholder="Juan Pérez">
+                    </div>
+                    
+                    <div class="campo">
+                        <label> Cédula:</label>
+                        <input type="text" placeholder="12345678">
+                    </div>
+                    
+                    <div class="info-contacto">
+                        <div class="contacto-item">
+                            <span class="icono"></span>
+                            <span>cliente@gmail.com</span>
+                        </div>
+                        <div class="contacto-item">
+                            <span class="icono"></span>
+                            <span>300-123-4567</span>
+                        </div>
+                        <div class="contacto-item">
+                            <span class="icono">📍</span>
+                            <span>Pereira, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="caja verde">
+                    <h2>⭐ PUNTOS DEL CLIENTE</h2>
+                    <div class="campo">
+                        <label> Puntos Acumulados:</label>
+                        <input type="number" value="200" class="puntos-input">
+                    </div>
+                    
+                    <div class="calificacion">
+                        <div class="estrellas">
+                            <span class="estrella">⭐</span>
+                            <span class="estrella">⭐</span>
+                            <span class="estrella">⭐</span>
+                            <span class="estrella">⭐</span>
+                            <span class="estrella">⭐</span>
+                            <span class="estrella">⭐</span>
+                        </div>
+                        <p class="texto-calificacion">Calificación del Cliente</p>
+                        <p class="planes">PLANES DISPONIBLES</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="columna">
+                
+                <div class="caja amarilla">
+                    <h2> BUSCAR CLIENTE</h2>
+                    <div class="campo">
+                        <label> Buscar por nombre o cédula:</label>
+                        <input type="text" placeholder="Escriba aquí para buscar..." class="buscar-input">
+                    </div>
+                    
+                    <div class="lista-clientes">
+                        <div class="cliente-item">
+                            <span class="cliente-nombre">Cristiano Ronaldo</span>
+                            <span class="cliente-cedula">CC: 12345678</span>
+                        </div>
+                        <div class="cliente-item">
+                            <span class="cliente-nombre">María López</span>
+                            <span class="cliente-cedula">CC: 87654321</span>
+                        </div>
+                        <div class="cliente-item">
+                            <span class="cliente-nombre">Pedro Gómez</span>
+                            <span class="cliente-cedula">CC: 11223344</span>
+                        </div>
+                        <div class="cliente-item">
+                            <span class="cliente-nombre">Ana Rodríguez</span>
+                            <span class="cliente-cedula">CC: 55667788</span>
+                        </div>
+                    </div>
+                    <button class="boton boton-buscar">🔍 Buscar Cliente</button>
+                </div>
+
+<div class="caja calificacion-platos">
+    <h2>Calificaciones de nuestros Platos</h2>
+    <div class="plato-item">
+        <span class="plato-nombre">Lomo Saltado</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="plato-item">
+        <span class="plato-nombre">Sopa de Miso</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐</span>
+    </div>
+    <div class="plato-item">
+        <span class="plato-nombre">Ensalada César</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="plato-item">
+        <span class="plato-nombre">Filet Mignon</span>
+        <span class="plato-estrellas">⭐⭐⭐⭐</span>
+    </div>
+</div>
+                <div class="caja azul">
+                    <h2>APLICAR DESCUENTOS</h2>
+                    <div class="campo">
+                        <label> Tipo de descuento:</label>
+                        <select class="select-descuento">
+                            <option>Seleccionar descuento...</option>
+                            <option>🥉 10% - Cliente frecuente</option>
+                            <option>🥈 15% - Por puntos</option>
+                            <option>🥇 20% - Descuento especial</option>
+                        </select>
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Valor del descuento:</label>
+                        <input type="text" placeholder="$0.00" class="valor-input">
+                    </div>
+                    
+                    <div class="campo">
+                        <label> Saldo actual:</label>
+                        <input type="text" placeholder="Saldo del cliente">
+                    </div>
+                    
+                    <div class="campo">
+                        <label> Notas adicionales:</label>
+                        <textarea placeholder="Escriba observaciones sobre el cliente..."></textarea>
+                    </div>
+                    
+                    <button class="boton boton-aplicar">Aplicar Descuento</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    
+
+</body>
+</html>
