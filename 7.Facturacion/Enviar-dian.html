@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facturacion</title>
+    <title>Facturación</title>
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/7y8.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- ========== ENCABEZADO ========== -->
     <header>
         <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-icon">
@@ -40,5 +41,43 @@
         </section>
     </header>
 
+    <!-- ========== CONTENIDO FACTURACIÓN ========== -->
+    <main class="factura">
+        <!-- Columna izquierda -->
+        <div class="col-izq">
+            <h2>Datos de la Factura</h2>
+
+            <div class="campo">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" name="codigo">
+            </div>
+
+            <div class="campo">
+                <label for="producto">Producto:</label>
+                <input type="text" id="producto" name="producto">
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-der">
+            <h2>Detalle</h2>
+            <section class="col-der">
+                <div class="tabla">
+                <p><b>Código</b> | <b>Producto</b> | <b>Cant</b> | <b>Valor</b></p>
+                <p>001 - Gaseosa - 2 - $8.000</p>
+                <p>002 - Pizza - 1 - $25.000</p>
+                </div>
+            </section>
+            <div class="totales">
+                <p>Total: $0</p>
+            </div>
+            <div class="envio-dian">
+                <h3>Envío a la DIAN</h3>
+                <p>Estado: <span class="estado">Pendiente</span></p>
+                <button class="enviar">Enviar</button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
