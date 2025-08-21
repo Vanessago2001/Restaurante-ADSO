@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- ========== ENCABEZADO ========== -->
     <header>
         <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-icon">
@@ -36,29 +35,38 @@
         </nav>
         <section id="lado-izquierdo">
             <a href="/0.Clientes/perfil_usuario.html" class="perfil_usuario"><i class="fa-solid fa-user"></i></a>
-            <a href="/0.Principal/pagina_principal.html" class="salida"><i
-                    class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            <a href="/0.Principal/pagina_principal.html" class="salida">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
         </section>
     </header>
 
-    <!-- ========== CONTENIDO FACTURACIÓN ========== -->
     <main class="factura">
-        <!-- Columna izquierda -->
         <div class="col-izq">
-            <h2>Datos de la Factura</h2>
+            <h2>Forma de pago</h2>
 
             <div class="campo">
-                <label for="codigo">Código:</label>
-                <input type="text" id="codigo" name="codigo">
+                <label for="codigo">Efectivo:</label>
+                <input type="checkbox">
+                <input type="number">
             </div>
 
             <div class="campo">
-                <label for="producto">Producto:</label>
-                <input type="text" id="producto" name="producto">
+                <label for="producto">Transferencia:</label>
+                <input type="checkbox">
+                <input type="number">
+
+            </div>
+            <h2>Formato</h2>
+            <div class="campo">
+                <label for="producto">Pos:</label>
+                <input type="checkbox">
+                <img src="/img/Ejemplo factura-PDF-POS.webp" alt="">
+                <label for="producto">Facturación:</label>
+                <input type="checkbox">
+                <img src="/img/maxresdefault.jpg" alt="">
             </div>
         </div>
 
-        <!-- Columna derecha -->
         <div class="col-der">
             <h2>Detalle</h2>
             <section class="col-der">
@@ -79,5 +87,4 @@
         </div>
     </main>
 </body>
-
 </html>
